@@ -1,0 +1,27 @@
+<html>
+  <body style="padding:0;margin:0;">
+    <canvas style="padding:0;margin:0;" id="canvas" height="500px" width="500px"></canvas>
+    <h1 id="living"></h1>
+    <button onclick="setSpeed()">Go</button>
+    <button onclick="randomize()">randomize</button>
+    <button onclick="stopSteps()">Stop</button>
+    <label value=for="speed">Speed (1 steps/second - 100 steps/second):</label>
+    <input id="speed" type="range" list="tickmarks" onchange="setSpeed()">
+
+    <datalist id="tickmarks">
+      <option value="1">
+      <option value="10">
+      <option value="20">
+      <option value="30">
+      <option value="40">
+      <option value="50">
+      <option value="60">
+      <option value="70">
+      <option value="80">
+      <option value="90">
+      <option value="100">
+    </datalist>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
